@@ -7,9 +7,11 @@
     <title>
         <?php wp_title('|', true, 'right'); ?>
     </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
     
     <link rel="shortcut icon" href="/wp-content/themes/BWtheme/assets/img/logo.png"> 
-
 
     <?php wp_head(); ?>
 </head>
