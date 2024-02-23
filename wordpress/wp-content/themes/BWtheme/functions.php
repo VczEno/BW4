@@ -15,6 +15,26 @@ function bw_theme_support() {
     add_theme_support('post-thumbnails');
 }
 
+function custom_customize_register($wp_customize) {
+    $wp_customize->add_section('homepage_section', array(
+        'title' => __('Homepage Settings', 'your_theme_textdomain'),
+        'priority' => 30,
+    ));
+
+    $wp_customize->add_setting('homepage_image', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'homepage_image', array(
+        'label' => __('Homepage Image', 'your_theme_textdomain'),
+        'section' => 'homepage_section',
+        'settings' => 'homepage_image',
+    )));
+}
+
+add_action('customize_register', 'custom_customize_register');
+
 class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_Menu {
     function start_lvl(&$output, $depth = 0, $args = null) {
         if ($depth > 0) {
@@ -55,6 +75,58 @@ function add_menus() {
 
     register_nav_menus($locations);
 }
+
+function my_theme_customize_title($wp_customize) {
+    $wp_customize->add_section('title_section', array(
+        'title' => __('Head Title', 'my_theme'),
+        'priority' => 30,
+    ));
+
+    $wp_customize->add_setting('title_text', array(
+        'default' => 'Template Adattabile',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    $wp_customize->add_control('title_text', array(
+        'label' => __('Head Title', 'my_theme'),
+        'section' => 'title_section',
+        'type' => 'text',
+    ));
+}
+function aggiungi_campo_placeholder() {
+    add_meta_box(
+        'campo_placeholder_id',
+        'Immagine Placeholder',
+        'mostra_campo_placeholder',
+        'page', // specifica il tipo di post dove visualizzare il campo
+        'normal',
+        'high'
+    );
+}
+
+function mostra_campo_placeholder($post) {
+    $valore_campo = get_post_meta($post->ID, 'campo_placeholder', true);
+    echo '<input type="text" name="campo_placeholder" value="' . esc_attr($valore_campo) . '" />';
+}
+
+function salva_campo_placeholder($post_id) {
+    if (array_key_exists('campo_placeholder', $_POST)) {
+        update_post_meta(
+            $post_id,
+            'campo_placeholder',
+            sanitize_text_field($_POST['campo_placeholder'])
+        );
+    }
+};
+
+
+
+add_action('customize_register', 'my_theme_customize_title');
+
+add_action('add_meta_boxes', 'aggiungi_campo_placeholder');
+add_action('save_post', 'salva_campo_placeholder');
+
+
 
 add_action('after_setup_theme','bw_theme_support');
 
