@@ -3,6 +3,7 @@
 get_header();
 
 ?>
+<main class="container-fluid px-2">
     <div class="ratio ratio-21x9 position-relative embed-responsive"> <!-- da mettere fuori il div.container per riempire orizzontalmente lo schermo -->
         <iframe class='z-index-n2' src="https://www.youtube.com/embed/mlHklH5VBtI?si=cVxNnnCvU4Trp8Qq&amp;controls=0&mute=1&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
         <div class=' d-flex z-index-1 w-50 h-25  bg-dark position-absolute top-50 start-50 translate-middle justify-content-center ' style="--bs-bg-opacity: .50;">
@@ -16,14 +17,14 @@ get_header();
 
         <div class="mete-momento my-4">
             <h2 class="text-center mt-3">Le mete del momento</h2>
-            <div class="d-flex align-items-center justify-content-evenly my-5">
+            <div class="d-flex align-items-center justify-content-between my-5">
 
                 <div class="wrapper">
                     <div class="image position-relative">
                     <img src="https://images.unsplash.com/photo-1559925523-10de9e23cf90?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="" width="300px" height="300px">
                         <div class="content">
-                            <button class="py-3 px-4 border-0 rounded"><h4>Marocco</h4></button>
+                            <button class="px-3 py-2 border-0 rounded btn-homepage">Marocco</button>
                         </div>
                     </div>
                 </div>
@@ -34,7 +35,7 @@ get_header();
                         <img src="https://images.unsplash.com/photo-1542640244-7e672d6cef4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="" width="300px" height="300px">
                         <div class="content">
-                            <button class="py-3 px-4 border-0 rounded"><h4>Giappone</h4></button>
+                            <button class="px-3 py-2 border-0 rounded btn-homepage">Giappone</button>
                         </div>
                     </div>
                 </div>
@@ -45,27 +46,27 @@ get_header();
                         <img src="https://images.unsplash.com/photo-1473896100090-53523650d4c6?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="" width="300px" height="300px">
                         <div class="content">
-                            <button class="py-3 px-4 border-0 rounded"><h4>Inghilterra</h4></button>
+                            <button class="px-3 py-2 border-0 rounded btn-homepage">Inghilterra</button>
                         </div>    
                     </div>
                 </div>
 
                 <div class="wrapper">
                     <div class="image position-relative">
-                        <img src="https://images.unsplash.com/photo-1473896100090-53523650d4c6?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        <img src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/bolivia3.jpg"
                             alt="" width="300px" height="300px">
                         <div class="content">
-                            <button class="py-3 px-4 border-0 rounded"><h4>Inghilterra</h4></button>
+                            <button class="px-3 py-2 border-0 rounded btn-homepage">Bolivia</button>
                         </div>    
                     </div>
                 </div>
 
                 <div class="wrapper">
                     <div class="image position-relative">
-                        <img src="https://images.unsplash.com/photo-1473896100090-53523650d4c6?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    <img src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/nuovazelanda2.jpg"
                             alt="" width="300px" height="300px">
                         <div class="content">
-                            <button class="py-3 px-4 border-0 rounded"><h4>Inghilterra</h4></button>
+                            <button class="py-2 px-3 border-0 rounded btn-homepage">Nuova Zelanda</button>
                         </div>    
                     </div>
                 </div>
@@ -79,7 +80,7 @@ get_header();
         </div>
 
         <div class="mt-3 w-75 text-center mx-auto ">
-            <h2>Reviews</h2>
+            <h2 class="text-uppercase fw-bold">Dicono di noi</h2>
 
             <div id="carouselExampleAutoplaying" class="carousel carousel-dark slide  " data-bs-ride="carousel" >
                 <div class="carousel-inner shadow-lg ">
@@ -262,6 +263,7 @@ get_header();
             
            
         </div>
+    </main>
     
 <?php 
 
