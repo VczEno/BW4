@@ -120,6 +120,22 @@ function salva_campo_placeholder($post_id) {
 };
 
 
+// Aggiungi campi personalizzati di Meta Box
+function my_theme_register_meta_boxes() {
+    // Campi per il paese Giappone
+    add_post_meta( 'giappone', 'Giappone', true );
+
+    // Campi per il paese Inghilterra
+    add_post_meta( 'inghilterra', 'Inghilterra', true );
+
+    // Aggiungi altri paesi secondo necessità
+}
+
+// Esegui la registrazione dei campi personalizzati
+add_action('init', 'my_theme_register_meta_boxes');
+
+
+
 
 add_action('customize_register', 'my_theme_customize_title');
 
