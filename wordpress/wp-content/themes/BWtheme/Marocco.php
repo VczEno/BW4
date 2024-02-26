@@ -14,12 +14,12 @@ get_header();
             <h1 class="text-center fw-bold">Benvenuti in <?php the_title(); ?></h1>
         </div>
 
-        <p class="py-2">Benvenuti nel vostro viaggio virtuale nel <b><?php the_title(); ?></b>, una terra di antiche tradizioni e modernità futuristica. Esplorerete città storiche come <b> Kyoto e metropoli frenetiche come Tokyo </b>, incontrando una cultura vibrante, paesaggi mozzafiato e una gastronomia deliziosa lungo il percorso. Preparatevi per un'avventura indimenticabile che vi porterà attraverso i contrasti affascinanti di questa meravigliosa nazione.</p>
+        <p class="py-2">Benvenuti nel vostro viaggio virtuale in <b><?php the_title(); ?></b>, terra di contrasti e meraviglie senza fine. <br> Situato all'estremità <b>nord-occidentale dell'Africa</b>, questo affascinante paese offre ai suoi visitatori un mix unico di cultura, storia e natura. </p>
 
         <div class="mt-4">
             <div class="row">
                 <div class="col-8">
-                    <img src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/japan2.jpeg"
+                    <img src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/marocco1.jpg"
                     alt="japan"
                     class="img-fluid rounded-4"/>
                 </div>
@@ -45,35 +45,26 @@ get_header();
                 <h2 class="fw-bold">MIGLIOR PERIODO PER VIAGGIARE <i class="bi bi-luggage"></i></h2>
                 <div class="col-8">
                     <div class="pannello p-3 border border-3 border-light">
-                        <p>Il miglior periodo per visitare il Giappone <b> dipende dalle tue preferenze personali </b> e dalle attività che desideri svolgere durante il tuo viaggio. <br> Tuttavia, molti esperti di viaggi consigliano di visitare il Giappone durante la primavera, in particolare durante <b> la stagione dei ciliegi in fiore (Sakura) </b> che di solito cade tra fine marzo e inizio aprile. <br> Durante questo periodo, i parchi e i giardini sono ricoperti di bellissimi fiori di ciliegio in fiore, creando uno spettacolo mozzafiato. <br> Inoltre, le temperature sono piacevoli e l'atmosfera generale è molto positiva. <br>
-                            Se preferisci evitare i fiori di ciliegio, puoi considerare la visita in autunno durante la stagione delle foglie rosse (Koyo) che di solito cade tra ottobre e novembre. <br> Durante questo periodo, <b> i giardini e i parchi </b> si tingono di colori autunnali spettacolari, creando un'atmosfera magica.</p>
+                        <p><b>In primavera</b>, che va da marzo a maggio, il clima è mite e piacevole, rendendo perfette le visite alle città storiche come <b>Marrakech, Fes e Casablanca</b>. I giardini sono in fiore e i colorati souk sono pieni di vita. In autunno, da settembre a novembre, le temperature sono ancora piacevoli e si evita la calura estiva.
+
+                        <br>Evitare la visita durante i mesi estivi, <b>da giugno ad agosto</b>, quando le temperature possono raggiungere livelli molto alti, soprattutto nelle regioni interne come il deserto del Sahara. Inoltre, molti marocchini scelgono di viaggiare durante i mesi estivi per le vacanze, rendendo le principali città e le attrazioni turistiche molto affollate.
+
+                        <br> Quindi, se cercate il periodo migliore per visitare il Marocco, la <b>primavera e l'autunno sono le stagioni ideali</b> per godere di condizioni climatiche favorevoli e evitare le folle dei turisti.</p>
                     </div>
 
-                    <!-- contenitore francobolli -->
+                    <!-- contenitore separatore oro -->
                     <div class="d-flex justify-content-around mt-2">
-                        <img src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/francobJapan.png"
-                        alt="francobolli"
-                        class="francobolli-piccoli"/>
-
-                        <img src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/francobJapan2.png"
-                        alt="francobolli"
-                        class="francobolli-piccoli"/>
-
-                        <img src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/francobJapan3.png"
-                        alt="francobolli"
-                        class="francobolli-piccoli"/>
-
-                        <img src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/francobJapan4.png"
-                        alt="francobolli"
-                        class="francobolli-piccoli"/>
+                        <img src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/separatoreoro.png"
+                        alt="separatore"
+                        class="separatore-oro"/>
                     </div>
 
                 </div>
                 <div class="col-4">
-                    <img src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/japan3.jpg" 
+                    <img src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/marocco2.png" 
                     alt="giappone"
                     class="img-fluid rounded-4">
-                    <img src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/shibuya.jpg" 
+                    <img src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/marocco3.jpg" 
                     alt="shibuya"
                     class="img-fluid mt-3 rounded-4">
                 </div>
@@ -84,22 +75,22 @@ get_header();
             <div class="row">
                 <h4 class="text-end fw-semibold"><i class="bi bi-map"></i> Informazioni utili</h4>
                 <div class="col-4">
-                <img src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/tokyo.jpg" 
+                <img src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/marocco7.jpg" 
                     class="img-fluid rounded-4">
-                    <img src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/tokyo2.jpg"
+                    <img src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/marocco8.jpg"
                     alt=""
                     class="img-fluid mt-3 rounded-4">
                 </div>
 
                 <div class="col-8 pannello p-3 border border-3 border-light">
                     <p>
-                        <b>Alloggio: </b> dalle tradizionali ryokan (locande) ai moderni hotel. Prenotate in anticipo, specialmente durante eventi o periodi di alta stagione.<br>
-                        <b>Trasporti: </b> il sistema ferroviario è eccellente e consente un facile spostamento tra le città. L'acquisto di un Japan Rail Pass può essere conveniente per i viaggiatori che prevedono di esplorare diverse regioni. <br>
-                        <b>Ristoranti: </b> Assaggiate la cucina giapponese autentica. Oltre al sushi, provate ramen, tempura, yakitori e kaiseki. Esplorate i mercati alimentari locali per un'esperienza culinaria più autentica. <br>
-                        <b>Attività: </b> visitate i templi storici a Kyoto, immergetevi nella cultura pop a Tokyo, fate escursioni sul Monte Fuji o rilassatevi nelle sorgenti termali (onsen). Partecipate a festival locali per sperimentare le tradizioni giapponesi. <br>
-                        <b>Lingua: </b> L'inglese potrebbe non essere ampiamente parlato fuori delle principali città, quindi imparare alcune frasi di base in giapponese può essere utile. <br>
-                        <b>Moneta: </b> La valuta è lo yen. Preparatevi a utilizzare principalmente contanti, poiché alcune piccole imprese potrebbero non accettare carte di credito straniere. <br>
-                        </p>
+                        <b>Cibo: </b> assaggiate la variegata street food marocchina, ma assicuratevi che sia fresca e cucinata al momento per evitare problemi di salute.<br>
+                        <b>Trasporti: </b> prima di salire su un taxi, concordate il prezzo o assicuratevi che il tassimetro sia acceso per evitare spiacevoli sorprese alla fine del tragitto.<br>
+                        <b>Sicurezza: </b> prendete precauzioni contro furti e truffe, specialmente in luoghi affollati e turistici, e tenete d'occhio i vostri effetti personali. <br>
+                        <b>Abbigliamento: </b> vestitevi in modo modesto e rispettoso, soprattutto nelle aree più tradizionali e religiose, per mostrare rispetto per la cultura locale.<br>
+                        <b>Navigazione: </b> utilizzate un GPS o una mappa offline per navigare nei mercati e nelle strade labirintiche delle città, facilitando gli spostamenti. <br>
+                        <b>Taxi: </b> concordate il prezzo o assicuratevi che il tassimetro sia acceso per evitare spiacevoli sorprese alla fine del tragitto. <br>
+                    </p>
 
                         <p class="fw-bold text-center text-secondary mx-5 border border-2 rounded-2 border-light">Buon viaggio!</p>
                 </div>
@@ -107,22 +98,22 @@ get_header();
         </div>
 
         <div class="mt-4">
-            <div class="row">
+            <div class="row text-center">
                 <div class="col">
-                <img src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/japan4.jpeg" 
-                        alt="templi"
+                <img style="height: 14em;" src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/marocco4.jpg" 
+                        alt="marocco"
                         class="img-fluid rounded-4"
                     >
                 </div>
                 <div class="col">
-                <img src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/japan5.jpg" 
-                        alt="japan"
+                <img style="height: 14em;"  src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/marocco5.jpg" 
+                        alt="marocco"
                         class="img-fluid rounded-4"
                     >
                 </div>
                 <div class="col">
-                <img style="height: 12.5em;" src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/japan6.jpeg" 
-                        alt="casa giapponese"
+                <img style="height: 14em;"  src="<?php echo get_stylesheet_directory_uri()?> ./assets/img/marocco6.jpg" 
+                        alt="marocco"
                         class="img-fluid rounded-4"
                     >
                 </div>

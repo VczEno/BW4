@@ -76,6 +76,27 @@ function add_menus() {
     register_nav_menus($locations);
 }
 
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
+
+function add_additional_class_on_li($classes, $item, $args)
+{
+    if (isset($args->add_li_class))
+    {
+        $classes[] = $args->add_li_class;
+    }
+    return $classes;
+}
+ 
+// A tags
+
+add_filter( 'nav_menu_link_attributes', 'add_link_atts');
+
+function add_link_atts($atts) 
+{ 
+     $atts['class'] = "nav-link"; 
+     return $atts;
+}
+
 function my_theme_customize_title($wp_customize) {
     $wp_customize->add_section('title_section', array(
         'title' => __('Head Title', 'my_theme'),
@@ -118,22 +139,6 @@ function salva_campo_placeholder($post_id) {
         );
     }
 };
-
-
-// Aggiungi campi personalizzati di Meta Box
-function my_theme_register_meta_boxes() {
-    // Campi per il paese Giappone
-    add_post_meta( 'giappone', 'Giappone', true );
-
-    // Campi per il paese Inghilterra
-    add_post_meta( 'inghilterra', 'Inghilterra', true );
-
-    // Aggiungi altri paesi secondo necessità
-}
-
-// Esegui la registrazione dei campi personalizzati
-add_action('init', 'my_theme_register_meta_boxes');
-
 
 
 
