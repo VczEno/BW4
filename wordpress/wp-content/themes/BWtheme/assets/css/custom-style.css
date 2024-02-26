@@ -46,6 +46,7 @@
 }
 
 
+
 /* pagina Bolivia */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto&display=swap');
 
@@ -84,12 +85,12 @@ main {
     user-select: none;
 }
 
-/* si riferisce alla parte della pagina di dettaglio /
+/* si riferisce alla parte della pagina di dettaglio */
 .pannello {
     background-color: #f3e9da;
 }
 
-/ pannello destinazioni */
+/* pannello destinazioni */
 
 .destinazioni {
     list-style-type: none;
@@ -123,4 +124,14 @@ main {
 
 .icone-inglesi {
     width: 20em;
+}
+
+main {
+    padding: 2em 0;
+}
+
+.btn-homepage {
+    color: white !important;
+    background-color: #e7d0af;
+    font-size: 1.5em;
 }
