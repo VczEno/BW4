@@ -9,6 +9,27 @@ function load_script() {
     wp_enqueue_script('custom_script', get_template_directory_uri() .'/assets/js/script.js');
 }
 
+// funzioni per header boostrap 
+// Ability to add classes to wp_nav_menu LI tags
+function add_additional_class_on_li($classes, $item, $args)
+{
+    if (isset($args->add_li_class))
+    {
+        $classes[] = $args->add_li_class;
+    }
+    return $classes;
+}
+ 
+// A tags
+
+add_filter( 'nav_menu_link_attributes', 'add_link_atts');
+
+function add_link_atts($atts) 
+{ 
+     $atts['class'] = "nav-link"; 
+     return $atts;
+}
+
 function bw_theme_support() {  
     add_theme_support('title-tag');
     add_theme_support('custom-logo');
