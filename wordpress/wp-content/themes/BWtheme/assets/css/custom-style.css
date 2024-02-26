@@ -1,0 +1,45 @@
+.hero-japan {
+    background-color: blue !important;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image {
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgb(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.content:hover {
+    opacity: 1;
+}
+
+.content h4 {
+    text-decoration: none; 
+    color: black;
+}
+
+/* footer */
+.footer-logo {
+    max-width: 100px !important; /* Imposta la larghezza massima desiderata */
+    height: auto;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+}

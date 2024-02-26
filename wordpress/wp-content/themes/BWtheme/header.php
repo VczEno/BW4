@@ -13,10 +13,6 @@
     
     <link rel="shortcut icon" href="/wp-content/themes/BWtheme/assets/img/logo.png"> 
 
-    <style>
-        <?php include "style.css" ?>
-    </style>
-    
     <?php wp_head(); ?>
 </head>
 
@@ -32,7 +28,7 @@
                         $logo = wp_get_attachment_image_src( $custom_logo_id);
                     }
                     ?>
-                    <img src="<?=  $logo[0] ?> " alt="Logo" width="30" height="24">
+                    <img src="<?=  $logo[0] ?> " alt="Logo" width="50" height="50" style="border-radius: 50px" class='me-3'>
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,6 +48,7 @@
                         )
                     );
                     ?>
+
                    
                 </div>
             </div>

@@ -2,11 +2,11 @@
 function load_style() {
     wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' );
     wp_enqueue_style('bootstrap_icon', "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" );
-    wp_enqueue_style('custom_style', get_template_directory_uri() .'./assets/css/custom-style.css');
+    wp_enqueue_style('custom_style', get_template_directory_uri() .'/assets/css/custom-style.css');
 }
 function load_script() {
     wp_enqueue_script('bootstrap_js', "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" );
-    wp_enqueue_script('custom_script', get_template_directory_uri() .'./assets/js/script.js');
+    wp_enqueue_script('custom_script', get_template_directory_uri() .'/assets/js/script.js');
 }
 
 function bw_theme_support() {  
@@ -76,27 +76,6 @@ function add_menus() {
     register_nav_menus($locations);
 }
 
-add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
-
-function add_additional_class_on_li($classes, $item, $args)
-{
-    if (isset($args->add_li_class))
-    {
-        $classes[] = $args->add_li_class;
-    }
-    return $classes;
-}
- 
-// A tags
-
-add_filter( 'nav_menu_link_attributes', 'add_link_atts');
-
-function add_link_atts($atts) 
-{ 
-     $atts['class'] = "nav-link"; 
-     return $atts;
-}
-
 function my_theme_customize_title($wp_customize) {
     $wp_customize->add_section('title_section', array(
         'title' => __('Head Title', 'my_theme'),
@@ -140,6 +119,43 @@ function salva_campo_placeholder($post_id) {
     }
 };
 
+
+// Aggiungi campi personalizzati di Meta Box
+function my_theme_register_meta_boxes() {
+    // Campi per il paese Giappone
+    add_post_meta( 'giappone', 'Giappone', true );
+
+    // Campi per il paese Inghilterra
+    add_post_meta( 'inghilterra', 'Inghilterra', true );
+
+    // Aggiungi altri paesi secondo necessità
+}
+
+// funzione per footer
+function register_footer_widget_area() {
+    register_sidebar(array(
+        'name'          => __('Footer Widget Area', 'text_domain'),
+        'id'            => 'footer-widget-area',
+        'description'   => __('Widget area for the footer', 'text_domain'),
+        'before_widget' => '<div id="%1$s" class="widget %2$s custom-widget-container">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ));
+}
+
+add_action('widgets_init', 'register_footer_widget_area');
+
+// funzione per logo  nel footer
+function custom_theme_setup() {
+    add_theme_support('custom-logo');
+}
+
+add_action('after_setup_theme', 'custom_theme_setup');
+
+
+// Esegui la registrazione dei campi personalizzati
+add_action('init', 'my_theme_register_meta_boxes');
 
 
 add_action('customize_register', 'my_theme_customize_title');
