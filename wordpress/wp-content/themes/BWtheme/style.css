@@ -73,6 +73,10 @@ main {
     cursor: pointer;
 }
 
+.destinazioni-li:hover {
+    color: #474746 !important;
+}
+
 .francobolli-piccoli {
     width: 8em;
 }
@@ -80,4 +84,12 @@ main {
 .francobolli-medi {
     width: 12em;
     text-align: center;
+}
+
+.separatore-oro {
+    width: 25em;
+}
+
+.icone-inglesi {
+    width: 20em;
 }
