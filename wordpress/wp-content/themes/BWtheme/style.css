@@ -16,4 +16,68 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto&display=swap');
 
+h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2, h4 {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+p {
+    font-size: 1.1em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #73736F !important;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #c5b8a8 !important;
+    cursor: pointer;
+}
+
+main {
+    background-color: #F6F2EF;
+    user-select: none;
+}
+
+/* si riferisce alla parte della pagina di dettaglio */
+.pannello {
+    background-color: #f3e9da;
+}
+
+/* pannello destinazioni */
+
+.destinazioni {
+    list-style-type: none;
+    text-transform: uppercase;
+    color: #73736F !important;
+}
+
+.destinazioni-li {
+    background-color: #f3e9da;
+    margin: 0.6em 0;
+    padding: 0.3em;
+    cursor: pointer;
+}
+
+.francobolli-piccoli {
+    width: 8em;
+}
+
+.francobolli-medi {
+    width: 12em;
+    text-align: center;
+}
