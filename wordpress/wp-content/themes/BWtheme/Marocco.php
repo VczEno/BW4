@@ -1,12 +1,12 @@
 <?php
 /* 
-Template Name: Giappone
+Template Name: Marocco
 */
 
 get_header();
 ?>  
     <main class="container pt-3 pb-1 my-2 px-5">
-    <div class="hero rounded-1" style="height: 30em; background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/japan.jpeg'); background-size: cover;">
+    <div class="hero rounded-1" style="height: 30em; background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/maroccohero.jpg'); background-size: cover;">
             
         </div>
 
@@ -26,7 +26,7 @@ get_header();
                 <div class="col-4">
                     <h4 class="fw-semibold">Altre destinazioni <i class="bi bi-passport"></i></h4>
                     <ul class="destinazioni">
-                        <li class="destinazioni-li"><i class="bi bi-geo-alt"></i> Marocco</li>
+                        <li class="destinazioni-li"><i class="bi bi-geo-alt"></i> Giappone</li>
                         <li class="destinazioni-li"><i class="bi bi-geo-alt"></i> Nuova Zelanda</li>
                         <li class="destinazioni-li"><i class="bi bi-geo-alt"></i> Bolivia</li>
                         <li class="destinazioni-li"><i class="bi bi-geo-alt"></i> Inghilterra</li>

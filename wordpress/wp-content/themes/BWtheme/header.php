@@ -13,6 +13,10 @@
     
     <link rel="shortcut icon" href="/wp-content/themes/BWtheme/assets/img/logo.png"> 
 
+    <style>
+        <?php include "style.css" ?>
+    </style>
+    
     <?php wp_head(); ?>
 </head>
 
