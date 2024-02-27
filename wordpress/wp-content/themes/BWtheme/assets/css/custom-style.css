@@ -135,3 +135,12 @@ main {
     background-color: #e7d0af;
     font-size: 1.5em;
 }
+
+.pannello-blog {
+    background-color: #ebdbc2;
+}
+
+.categoriaLink:hover {
+    color: rgb(61, 43, 43) !important;
+    text-decoration: underline !important;
+}
